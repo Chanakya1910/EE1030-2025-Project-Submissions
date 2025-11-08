@@ -1,0 +1,55 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+\usepackage{lmodern}
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usepackage{enumitem}
+
+\usepackage{booktabs}
+\title{\centering TABLES}
+\author{\centering EE25BTECH11036 - M Chanakya Srinivas}
+\maketitle
+
+\renewcommand{\theequation}{\arabic{equation}}
+\begin{document}
+
+\maketitle
+
+\begin{table}[H]
+\centering
+\section{\textbf{ERROR ANALYSIS}}
+\label{tab:frobenius_error}
+\vspace{2mm}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Image} & \textbf{$k=5$} & \textbf{$k=20$} & \textbf{$k=50$} & \textbf{$k=100$} \\
+\midrule
+Einstein  & 21.61 & 9.75 & 4.04 & 0.76 \\
+Globe     & 13.08 & 6.72 & 3.91 & 2.32 \\
+Greyscale & 5.70  & 1.93 & 0.56 & 0.18 \\
+\bottomrule
+\end{tabular}
+
+\end{table}
+\subsection*{Summary Table}
+
+\begin{center}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+$k$ & Image Quality & Compression Ratio \\
+\midrule
+Small & Low (blurry) & High  \\
+Moderate & Moderate-High & Moderate  \\
+Large & High (almost original) & Low \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\end{document}
